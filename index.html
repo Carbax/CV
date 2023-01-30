@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon--> <link rel="icon" type="image/x-icon" href="http://imgfz.com/i/npDcSxj.png">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--Font Awesome--> <script src="https://kit.fontawesome.com/6f2cd5e208.js" crossorigin="anonymous"></script>
+    <!--Fuente "Quicksand"-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <title>Curriculum Vitae</title>
+    <!--CSS-->
+    <style>
+        /* Hay IDs y clases que tuve que crear para sobreescribir ciertos estilos de Bootstrap, ya que no me dejaba a partir de los tags correspondientes, como por ejemplo con los "hr" */
+
+        * {font-size: 2vw; font-family: 'Quicksand', sans-serif}
+
+        body {
+            background-image: url(http://imgfz.com/i/OILWRUd.png);
+            background-size: 70vw;
+            background-position: 50vw;
+        }
+
+        #boton {
+            color: black;
+            background-color: #dfdfdf;
+            border: solid #252e3e;
+            border-radius: 1vw;
+            margin-top: 1.19vw;
+        }
+
+        i {color: #252e3e;}
+        .icon_h3 {font-size: 3.47vw;}
+        .icon_h4 {font-size: 2.64vw;}
+
+        /* Header */
+
+        header {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            color: rgb(244, 244, 244);
+            background-color: #252e3e;
+            border-radius: 1vw 1vw 0 0;
+            border: solid #252e3e;
+            border-bottom: none;
+        }
+
+        img {
+            width: 23vw;
+            max-width: 165.6px;
+            border: double 0.5vw rgb(244, 244, 244);
+            border-radius: 50%;
+        }
+        #image_position {
+            padding: 3% 0% 3%;
+            text-align: center;
+        }
+
+        /* Aside */
+
+        aside {
+            padding-top: 2vw;
+            background-color: rgb(223, 223, 223);
+            border-radius: 0 0 0 1vw;
+            border-left: solid;
+            border-bottom: solid;
+            border-color: #252e3e;
+        }
+
+        nav {padding-left: 1.5vw;}
+
+        a:link,a:visited {
+            color: royalblue;
+            text-decoration: none
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        details::marker {text-align: right;}
+
+        /* Main */
+
+        main {
+            padding-top: 2vw;
+            padding-bottom: 1.39vw;
+            background-color: rgb(244, 244, 244);
+            border-radius: 0 0 1vw 0;
+            border-right: solid;
+            border-bottom: solid;
+            border-color: #252e3e;
+        }
+
+        .exp-for {margin-bottom: 0; font-weight: bold}
+        .lapso {text-align: right;}
+
+        .hr_style {color: #252e3e; opacity: 100%; margin-top: 0;}
+
+        /* CV */
+
+        #theme {margin-top: 2vh}
+        #cv {margin: 2vh}
+        #info {color: #252e3e}
+        @media (min-width: 720px) {
+            *{font-size: 14.4px}
+            #boton {margin-top: 8.54px;border-radius: 7.2px;}
+            #cv {margin: 8.54px}
+            #width_container {max-width: 720px;}
+            aside {padding-top: 14.4px;}
+            nav {padding-left: 13px;}
+            .icon_h3 {font-size: 25px;}
+            .icon_h4 {font-size: 19px;}
+            main {padding-top: 14.4px; padding-bottom: 10px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid" id="width_container">
+        <div class="row justify-content-center">
+            <button type="button" class="col-3" id="boton">
+                Tema oscuro <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+        <div class="row">
+            <div class="col" id="cv">
+                <header class="row bg-gradient">
+                    <div class="col-4" id="image_position">
+                        <img src="https://speakerhub.com/sites/default/files/user/profile_picture/2018/12/19/brajeshwar-oinam.jpg" alt="Foto de perfil">
+                    </div>
+                    <div class="col-8">
+                        <!--Ver eventos (header)-->
+                        <h1 class="fw-bold"></h1>
+                        <h2 class="fw-bold"></h2>
+                    </div>
+                </header>
+
+                <div class="row" id="info">
+
+                    <aside class="col-4">
+
+                        <details open>
+                            <summary class="fw-bold h4">Contacto <i class="fa-solid fa-phone-flip icon_h4"></i></summary>
+                            <nav>
+                                <!--Ver eventos (contacto)-->
+                                <p><i class="fa-solid fa-at"></i> <a href="mailto:jhontitor@example.com?Subject=Aquí%20el%20asunto%20del%20mail"></a></p>
+                                <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/1123581321" target="_blank"></a></p>
+                                <p><i class="fa-brands fa-facebook"></i> <a href="https://es-la.facebook.com/" target="_blank"></a></p>
+                                <p><i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/" target="_blank"></a></p>
+                                <p><i class="fa-solid fa-location-dot"></i> <a href="https://goo.gl/maps/b2AqGkMov7mR35Dh7" target="_blank"></a></p>
+                            </nav>
+                        </details>
+
+                        <details open>
+                            <summary class="fw-bold h4">Habilidades <i class="fa-solid fa-code icon_h4"></i></summary>
+                            <ul> <!--Ver eventos (habilidades)--> </ul>
+                        </details>
+
+                        <details open>
+                            <summary class="fw-bold h4">Aptitudes <i class="fa-solid fa-star icon_h4"></i></summary>
+                            <ul> <!--Ver eventos (aptitudes)--> </ul>
+                        </details>
+
+                    </aside>
+
+                    <main class="col-8">
+
+                        <details open>
+                            <summary class="fw-bold h3">Perfil profesional <i class="fa-solid fa-user icon_h3"></i></summary>
+                            <p style="text-align: justify" id="perfil_profesional"><!--Ver eventos (perfil profesional)--></p>
+                        </details>
+
+                        <hr class="hr_style">
+
+                        <details open>
+                            <summary class='fw-bold h3'>Experiencia <i class='fa-solid fa-briefcase icon_h3'></i></summary>
+                            <div id="exp-events"></div>    
+                            <!--Ver eventos (experiencia)-->
+                        </details>
+
+                        <hr class="hr_style">
+                        
+                        <details open>
+                            <summary class='fw-bold h3'>Formación <i class='fa-solid fa-graduation-cap icon_h3'></i></summary>
+                            <div id="for-events"></div>
+                            <!--Ver eventos (formación)-->
+                        </details>
+
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <!--Java Script-->
+    <script>
+        // Info en formato JSON
+        const info= {
+            "dat_pers": {
+                "nombre": "Jhon",
+                "apellido": "Titor",
+                "profesion": "Desarrollador"
+            },
+
+            "contacto": {
+                "mail": "jhontitor@example.com",
+                "wpp": "11 2358-1321",
+                "fb": "Jhon Titor",
+                "ig": "TimeTravel_0",
+                "ubic": "Florida, Estados Unidos"
+            },
+
+            "habilidades": {
+                "h1": "Nivel avanzado de inglés",
+                "h2": "Dominio de Python",
+                "h3": "Manejo de estrategias de marketing digital"
+            },
+
+            "aptitudes": {
+                "a1": "Organizado",
+                "a2": "Creativo",
+                "a3": "Flexible",
+                "a4": "Proactivo"
+            },
+
+            "experiencia": {
+                "e1": {
+                    "trabajo": "Analista de marketing digital",
+                    "lugar": "Fake Company S.R.L.",
+                    "inicio": "oct 2022",
+                    "final": "presente"
+                },
+
+                "e2" :{
+                    "trabajo": "Desarrollador de Python",
+                    "lugar": "Empresa Falsa S.A.",
+                    "inicio": "jul 2021",
+                    "final": "may 2022"
+                }
+            },
+
+            "formacion": {
+                "f1": {
+                    "capacitacion": "Curso de primeros pasos del desarrollo front-end",
+                    "lugar": "Ticmas Academy",
+                    "final": "presente"
+                },
+
+                "f2": {
+                    "capacitacion": "Curso de Marketing Digital: Community Manager & Publicidad",
+                    "lugar": "Casa del Codificador",
+                    "final": "2022"
+                },
+
+                "f3": {
+                    "capacitacion": "Curso de fundamentos de Python",
+                    "lugar": "Academia de programación",
+                    "final": "2021"
+                }
+            }
+        }
+
+        // Datos personales (header)
+        document.querySelector("h1").innerHTML = info.dat_pers.nombre + " " + info.dat_pers.apellido
+        document.querySelector("h2").innerHTML = info.dat_pers.profesion
+
+        // Contacto (nav)
+        const links = document.querySelectorAll("a")
+        const v_contacto = Object.values(info.contacto)
+        for (i=0 ; i<links.length ; i++) {links[i].innerHTML = v_contacto[i]}
+
+        const listas = document.querySelectorAll("ul") // Habilidades y aptitudes
+
+        // Habilidades
+        const v_habilidades = Object.values(info.habilidades)
+        var itemsh = ""
+        v_habilidades.forEach(elements => itemsh += '<li>' + elements + '</li>')
+        listas[0].innerHTML = itemsh
+
+        // Aptitudes
+        const v_aptitudes = Object.values(info.aptitudes)
+        var itemsa = ""
+        v_aptitudes.forEach(elements => itemsa += '<li>' + elements + '</li>')
+        listas[1].innerHTML = itemsa
+
+        // Perfil profesional
+        document.getElementById("perfil_profesional").innerHTML = "Soy " + info.dat_pers.profesion.toLowerCase() + " con experiencia como " + info.experiencia.e1.trabajo.toLowerCase() + ", cuento con diversas capacitaciones, " + info.habilidades.h1.toLowerCase() + ", y me caracterizo por ser " + info.aptitudes.a1.toLowerCase() + " y " + info.aptitudes.a2.toLowerCase() + ".<br>Me interesa el trabajo ya que pretendo seguir capacitándome en el área, comprometiéndome a aportar experiencia y explotar mis habilidades y aptitudes."
+
+        // Experiencia
+        const v_experiencia = Object.values(info.experiencia)
+        var bloqueExp = ""
+        v_experiencia.forEach(elements => bloqueExp += document.getElementById("exp-events").innerHTML = "<div class='row'><div class='col-7'><p class='exp-for'>" + elements.trabajo + "</p><p>" + elements.lugar + "</p></div><div class='col-5'><p class='lapso'>" + elements.inicio + " - " + elements.final + "</p></div></div>")
+        document.getElementById("exp-events").innerHTML = bloqueExp
+
+        // Formación
+        const v_formacion = Object.values(info.formacion)
+        var bloqueFor = ""
+        v_formacion.forEach(elements => bloqueFor += document.getElementById("for-events").innerHTML = "<div class='row'><div class='col-10'><p class='exp-for'>" + elements.capacitacion + "</p><p>" + elements.lugar + "</p></div><div class='col-2' style='padding-left:0'><p class='lapso'>" + elements.final + "</p></div></div>")
+        document.getElementById("for-events").innerHTML = bloqueFor
+
+        // Botón theme
+        let bg = "light"
+        document.getElementById('boton').addEventListener('click', function () {
+    
+    // Arrays
+    const bordes = ["header", "aside", "main", "button"]
+    let iconos = document.querySelectorAll("i")
+    let links = document.querySelectorAll("a")
+    let hr = document.querySelectorAll("hr")
+
+    if (bg == "light") {
+        document.body.style.backgroundImage = "URL(http://imgfz.com/i/wmJMXqe.png)"
+        bg = "dark"
+
+        // Botón
+        document.getElementById('boton').innerHTML = "Tema claro <i class='fa-solid fa-sun' style = 'color : rgb(244, 244, 244)'></i>"
+        document.querySelector("button").style.color = "rgb(244, 244, 244)"
+        document.querySelector("button").style.backgroundColor = "rgb(100, 100, 100)"
+
+        // CV
+        document.getElementById("info").style.color = "rgb(244, 244, 244)"
+        document.querySelector("header").style.backgroundColor = "rgb(25, 25, 25)"
+        document.querySelector("aside").style.backgroundColor = "rgb(85, 85, 85)"
+        document.querySelector("main").style.backgroundColor = "rgb(100, 100, 100)"
+
+        bordes.forEach(element => document.querySelector(element).style.borderColor = "rgb(244, 244, 244)") // Bordes
+
+        iconos.forEach(element => element.style.color = "rgb(244, 244, 244)") // Íconos
+
+        links.forEach(element => element.style.color = "lightskyblue") // Links
+
+        hr.forEach(element => element.style.color = "rgb(244, 244, 244)") // hr
+    }
+
+    else {
+        document.body.style.backgroundImage = "URL(http://imgfz.com/i/OILWRUd.png)"
+        bg = "light"
+
+        // Botón
+        document.getElementById('boton').innerHTML = "Tema oscuro <i class='fa-solid fa-moon' style = 'color : #252e3e'></i>"
+        document.querySelector("button").style.color = "#252e3e"
+        document.querySelector("button").style.backgroundColor = "#dfdfdf"
+
+        // CV
+        document.getElementById("info").style.color = "#252e3e"
+        document.querySelector("header").style.backgroundColor = "#252e3e"
+        document.querySelector("aside").style.backgroundColor = "rgb(223, 223, 223)"
+        document.querySelector("main").style.backgroundColor = "rgb(244, 244, 244)"
+
+        bordes.forEach((element) => (document.querySelector(element).style.borderColor = "#252e3e")) // Bordes
+
+        iconos.forEach(element => element.style.color = "#252e3e") // Íconos
+
+        links.forEach(element => element.style.color = "royalblue") // Links
+
+        hr.forEach(element => element.style.color = "#252e3e") // hr
+    }
+})
+    </script>
+    <!--Bootstrap popper-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+</html>
